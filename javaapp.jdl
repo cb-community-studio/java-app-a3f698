@@ -1,0 +1,54 @@
+application {
+  config {
+    applicationType monolith
+    authenticationType jwt
+    baseName javaapp
+    blueprints []
+    buildTool maven
+    cacheProvider no
+    clientFramework react
+    clientPackageManager npm
+    clientTheme none
+    creationTimestamp 1675619252234
+    databaseType mongodb
+    devDatabaseType mongodb
+    dtoSuffix DTO
+    enableGradleEnterprise false
+    enableHibernateCache false
+    enableSwaggerCodegen false
+    enableTranslation false
+    gradleEnterpriseHost ""
+    jhiPrefix jhi
+    jhipsterVersion "7.9.3"
+    jwtSecretKey "SyLYHrBbHRiS7SJUsGr2mWnBYPpeJHJFo3UQB930Cu4Ulnmg16OT20GlUBUq914JhxvN/GqVSsDOPO3N13ZiDxaubzpkiwNNd5i9EgGLSrwa+UN3aM2YE18mwIzRU2D71Wi81B9gd2hCVLfTp6/2Fp52bGughLETp1LlzZ2iBw=="
+    languages [en, fr]
+    messageBroker false
+    microfrontend false
+    microfrontends []
+    nativeLanguage en
+    otherModules []
+    packageName com.codebridgecommunity.javaapp
+    prodDatabaseType mongodb
+    reactive true
+    searchEngine false
+    serverPort 8080
+    serviceDiscoveryType eureka
+    skipClient false
+    skipUserManagement false
+    testFrameworks []
+    websocket false
+    withAdminUi true
+  }
+
+  entities Products
+}
+
+entity Products {
+  name String
+}
+
+
+paginate * with pagination
+service * with serviceImpl
+dto * with mapstruct
+
